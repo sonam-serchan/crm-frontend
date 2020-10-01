@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "subject": "SSL issue",
+    "status": "Client response pending",
+    "createdDt": "01-10-2020"
+  },
+  {
+    "id": 2,
+    "subject": "Form validation",
+    "status": "not working",
+    "createdDt": "02-10-2020"
+  },
+  {
+    "id": 3,
+    "subject": "Button overlap",
+    "status": "in progress",
+    "createdDt": "05-10-2020"
+  },
+  {
+    "id": 4,
+    "subject": "Password Reset",
+    "status": "Testing",
+    "createdDt": "03-10-2020"
+  },
+  {
+    "id": 5,
+    "subject": "Table Feature",
+    "status": "Under development",
+    "createdDt": "04-10-2020"
+  },
+  {
+    "id": 6,
+    "subject": "SSL issue",
+    "status": "Client response pending",
+    "createdDt": "01-10-2020"
+  },
+  {
+    "id": 7,
+    "subject": "Form validation",
+    "status": "not working",
+    "createdDt": "02-10-2020"
+  },
+  {
+    "id": 8,
+    "subject": "Button overlap",
+    "status": "in progress",
+    "createdDt": "05-10-2020"
+  },
+  {
+    "id": 9,
+    "subject": "Password Reset",
+    "status": "Testing",
+    "createdDt": "03-10-2020"
+  },
+  {
+    "id": 10,
+    "subject": "Table Feature",
+    "status": "Under development",
+    "createdDt": "04-10-2020"
+  }
+]
