@@ -3,7 +3,7 @@ import { Jumbotron, Form, Button, Row, Col } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import './add-ticket-form.style.css';
 
-export const AddTicketForm = ({ handleOnChange, handleOnSubmit, frmDt }) => {
+export const AddTicketForm = ({ handleOnChange, handleOnSubmit, frmDt, frmError }) => {
   return (
     <Jumbotron className="mt-3 bg-light add-new-ticket">
       <h1 className="text-info text-center">Add New Ticket</h1>
@@ -18,6 +18,9 @@ export const AddTicketForm = ({ handleOnChange, handleOnSubmit, frmDt }) => {
               onChange={handleOnChange}
               placeholder="Enter subject"
               required />
+            <Form.Text className="text-danger">
+              {frmError.subject && "Subject is required"}
+            </Form.Text>
           </Col>
         </Form.Group>
         <Form.Group as={Row}>
@@ -50,5 +53,6 @@ export const AddTicketForm = ({ handleOnChange, handleOnSubmit, frmDt }) => {
 AddTicketForm.propTypes = {
   handleOnChange: PropTypes.func.isRequired,
   handleOnSubmit: PropTypes.func.isRequired,
-  frmDt: PropTypes.object.isRequired
-};
+  frmDt: PropTypes.object.isRequired,
+  frmError: PropTypes.object.isRequired
+}
