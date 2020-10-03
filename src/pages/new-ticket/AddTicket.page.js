@@ -11,14 +11,14 @@ const initialFormData = {
 };
 
 const initialFormError = {
-  subject: "",
+  subject: false,
   issueDate: "",
   details: ""
 };
 
 export const AddTicket = () => {
   const [frmData, setFrmData] = useState(initialFormData);
-  const [frmError, setFrmError] = useState(initialFormData);
+  const [frmError, setFrmError] = useState(initialFormError);
 
   const handleOnChange = e => {
     const { name, value } = e.target;
@@ -30,9 +30,11 @@ export const AddTicket = () => {
 
   const handleOnSubmit = async e => {
     e.preventDefault();
-    const isValid = await shortText(frmData.subject);
-    !isValid &&
-      console.log('submitted', frmData, isValid);
+    const isSubjectValid = shortText(frmData.subject);
+    setFrmError({
+      ...frmError,
+      subject: !isSubjectValid
+    });
   }
 
   return (
@@ -44,7 +46,7 @@ export const AddTicket = () => {
       </Row>
       <Row>
         <Col>
-          <AddTicketForm handleOnChange={handleOnChange} handleOnSubmit={handleOnSubmit} frmDt={frmData} />
+          <AddTicketForm handleOnChange={handleOnChange} handleOnSubmit={handleOnSubmit} frmDt={frmData} frmError={frmError} />
         </Col>
       </Row>
     </Container>

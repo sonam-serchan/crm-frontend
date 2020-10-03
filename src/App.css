@@ -9,6 +9,7 @@
 
 header {
   grid-area: header;
+  z-index: 1;
 }
 
 main {
