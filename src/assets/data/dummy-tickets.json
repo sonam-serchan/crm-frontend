@@ -3,7 +3,24 @@
     "id": 1,
     "subject": "SSL issue",
     "status": "Client response pending",
-    "createdDt": "01-10-2020"
+    "createdDt": "01-10-2020",
+    "history": [
+      {
+        "date": "12-09-2020",
+        "message": "warning message",
+        "sender": "client"
+      },
+      {
+        "date": "12-09-2020",
+        "message": "solved",
+        "sender": "operator"
+      },
+      {
+        "date": "12-09-2020",
+        "message": "thanks",
+        "sender": "client"
+      }
+    ]
   },
   {
     "id": 2,
