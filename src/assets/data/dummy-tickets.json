@@ -26,25 +26,93 @@
     "id": 2,
     "subject": "Form validation",
     "status": "not working",
-    "createdDt": "02-10-2020"
+    "createdDt": "02-10-2020",
+    "history": [
+      {
+        "date": "12-09-2020",
+        "message": "warning message",
+        "sender": "client"
+      },
+      {
+        "date": "12-09-2020",
+        "message": "solved",
+        "sender": "operator"
+      },
+      {
+        "date": "12-09-2020",
+        "message": "thanks",
+        "sender": "client"
+      }
+    ]
   },
   {
     "id": 3,
     "subject": "Button overlap",
     "status": "in progress",
-    "createdDt": "05-10-2020"
+    "createdDt": "05-10-2020",
+    "history": [
+      {
+        "date": "12-09-2020",
+        "message": "warning message",
+        "sender": "client"
+      },
+      {
+        "date": "12-09-2020",
+        "message": "solved",
+        "sender": "operator"
+      },
+      {
+        "date": "12-09-2020",
+        "message": "thanks",
+        "sender": "client"
+      }
+    ]
   },
   {
     "id": 4,
     "subject": "Password Reset",
     "status": "Testing",
-    "createdDt": "03-10-2020"
+    "createdDt": "03-10-2020",
+    "history": [
+      {
+        "date": "12-09-2020",
+        "message": "warning message",
+        "sender": "client"
+      },
+      {
+        "date": "12-09-2020",
+        "message": "solved",
+        "sender": "operator"
+      },
+      {
+        "date": "12-09-2020",
+        "message": "thanks",
+        "sender": "client"
+      }
+    ]
   },
   {
     "id": 5,
     "subject": "Table Feature",
     "status": "Under development",
-    "createdDt": "04-10-2020"
+    "createdDt": "04-10-2020",
+    "history": [
+      {
+        "date": "12-09-2020",
+        "message": "warning message",
+        "sender": "client"
+      },
+      {
+        "date": "12-09-2020",
+        "message": "solved",
+        "sender": "operator"
+      },
+      {
+        "date": "12-09-2020",
+        "message": "thanks",
+        "sender": "client"
+      }
+    ]
   },
   {
     "id": 6,
