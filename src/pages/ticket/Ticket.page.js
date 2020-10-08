@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, Col, Container, Row } from 'react-bootstrap';
 import { PageBreadcrumb } from '../../components/breadcrumb/Breadcrumb.comp';
 import tickets from '../../assets/data/dummy-tickets.json';
 import { MessageHistory } from '../../components/message-history/MessageHistory.comp';
 import { UpdateTicket } from '../../components/update-ticket/UpdateTicket.comp';
+import { useParams } from "react-router-dom";
 
-const ticket = tickets[0];
 
 export const Ticket = () => {
+  const { id } = useParams();
+  const [ticket, setTicket] = useState('');
   const [message, setMessage] = useState('');
 
   const handleOnChange = e => {
@@ -19,6 +21,11 @@ export const Ticket = () => {
     console.log('submitted');
   }
 
+  useEffect(() => {
+    const data = tickets.find(row => parseInt(row.id) === parseInt(id));
+    setTicket(data);
+  }, [id]);
+
   return (
     <Container>
       <Row>
@@ -27,7 +34,7 @@ export const Ticket = () => {
         </Col>
       </Row>
       <Row>
-        <Col className="tezt-weight-bolder text-secondary">
+        <Col className="text-weight-bolder text-secondary">
           <div className="subject">Subject: {ticket.subject}</div>
           <div className="date">Date: {ticket.createdDt}</div>
           <div className="status">Status: {ticket.status}</div>
@@ -38,7 +45,9 @@ export const Ticket = () => {
       </Row>
       <Row className="mt-4">
         <Col>
-          <MessageHistory msg={ticket.history} />
+          {ticket.history &&
+            <MessageHistory msg={ticket.history} />
+          }
         </Col>
       </Row>
       <hr />
